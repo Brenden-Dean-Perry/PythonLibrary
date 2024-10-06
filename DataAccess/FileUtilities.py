@@ -13,3 +13,7 @@ class FileUtilities:
         with open(file_path, 'r') as file:
             data = file.read()
         return data
+
+    @staticmethod
+    def test():
+        return 0

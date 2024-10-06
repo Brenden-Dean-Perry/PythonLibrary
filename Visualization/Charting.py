@@ -10,4 +10,3 @@ class Charting:
         y_data = np.array(y)
         plt.scatter(x, y)
         return plt
-    
