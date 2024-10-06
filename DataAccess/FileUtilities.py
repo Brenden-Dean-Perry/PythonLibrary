@@ -15,6 +15,5 @@ class FileUtilities:
         return data
 
     @staticmethod
-    def test():
+    def test2():
         return 0
-    
