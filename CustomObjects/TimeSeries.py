@@ -15,6 +15,10 @@ class TimeSeries:
         return self._time_series_purpose
 
     def get_time_series_title(self) -> str:
+        '''
+        Returns time series title.
+        :return:
+        '''
         return self._time_series_title
 
     def get_series_index(self):

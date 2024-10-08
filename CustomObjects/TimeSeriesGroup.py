@@ -16,8 +16,11 @@ class TimeSeriesGroup:
     def remove_series_by_name(self, time_series_name: str):
         self._data = [x for x in self._data if x.get_time_series_name() != time_series_name]
 
-    def get_all_series(self) -> [TimeSeries]:
+    def get_all_time_series(self) -> [TimeSeries]:
         return self._data
+
+    def get_time_series_by_index(self, index: int) -> TimeSeries:
+        return self._data[index]
 
     def get_x_axis_label(self) -> str:
         return self._x_axis_label

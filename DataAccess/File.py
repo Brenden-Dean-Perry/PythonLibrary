@@ -1,5 +1,5 @@
 import pandas
-import PyPDF2
+import PyPDF
 
 
 class File:
@@ -17,7 +17,7 @@ class File:
 
     @staticmethod
     def get_pdf_data():
-        reader = PyPDF2.PdfReader('example.pdf')
+        reader = PyPDF.PdfReader('example.pdf')
         pages = []
 
         for page in reader.pages:
